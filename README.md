@@ -19,7 +19,8 @@ node.js wrapper for the Soundcloud SDK. Inspired by the libraries [soundcloud-no
 3. User will then be redirected to your `redirect_uri`, which can be handled by an Express endpoint (discussed in the next section).
 
 ```javascript
-var SC = require('node-soundcloud');
+var SoundCloud = require('node-soundcloud');
+var SC = new SoundCloud();
 
 // Initialize client
 SC.init({
